@@ -1,0 +1,66 @@
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    align-items: center;
+    
+}
+
+li a{
+    text-decoration: none;
+    display: block;
+    text-align: justify;
+    margin: 1.5em 0;
+    font-family: Tungsten, Bold;
+    color: white;
+}   
+
+
+
+#PlayButton{
+    color: red;
+    font-size: 80px;
+}
+
+#PlayButton:hover{
+    color: cyan;
+    transform: translate(15px);
+}
+li a:hover{
+    color: cyan;
+    transform: translate(15px);
+}
+
+
+#MenuScreen{
+    display: flex;
+    align-items: space-around;
+    font-size: 56px;
+    font-family: Tungsten-Bold;
+
+}
+
+
+.amongus:after{
+    content:'About Us';
+}
+.amongus:hover:after{
+    content:'Among Us';
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url(Tungsten-Bold.ttf);
+}
+
+@media screen {
+    
+}
+
+
+
+
