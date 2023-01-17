@@ -27,23 +27,29 @@ li a{
 }
 
 #PlayButton:hover{
-    color: cyan;
+    color: lightcyan;
     transform: translate(15px);
 }
 li a:hover{
-    color: cyan;
+    color: lightcyan;
     transform: translate(15px);
 }
 
 
 #MenuScreen{
     display: flex;
-    align-items: space-around;
-    font-size: 56px;
+    align-items: space-between;
+    font-size: 60px;
     font-family: Tungsten-Bold;
 
 }
 
+img.ValorantLogo{
+    width: 50px;
+    height: 40px;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+}
 
 .amongus:after{
     content:'About Us';
