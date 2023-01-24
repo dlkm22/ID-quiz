@@ -1,3 +1,4 @@
+$("#add-success-msg").hide();
      $(document).ready(function () { 
       $("#submit").on("click", function (e) { 
         // prevent default action of the button
@@ -30,6 +31,15 @@
   
           $.ajax(settings).done(function (response) {
               console.log(response);
+          $("#add-success-msg").show();
+          function reDirect() {
+            window.location.href="login.html";  
+          }
+          
+          reDirect();
+
+
+
           });
   
       })
