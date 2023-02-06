@@ -10,8 +10,7 @@ $("#add-unsuccessful-msg").hide();
   
           let jsondata = { 
               "email": email,
-              "password": password
-  
+              "password": password,
           };
           
           var settings = {
@@ -41,18 +40,33 @@ $("#add-unsuccessful-msg").hide();
                         window.location.href="index.html";  
                 }
                     reDirect();
-                }
+                    let content = "";
+                    $.ajax(settings).done(function (response) {
+      
+                      let content = "";
+                
+                      for (var i = 0; i < response.length && i < limit; i++) {
+                        console.log(response[i]);
+                        //[METHOD 1]
+                        //let's run our loop and slowly append content
+                        //we can use the normal string append += method
+            
+                        content += "<tr><td>" + response[i].username + "</td>" +
+                          "<td>" + response[i].email + "</td>" ;
+                      }   
+
+                      $("#userinfo tbody").html(content);
+                })}
 
                 else{
                     $("#add-unsuccessful-msg").show();
                     console.log("INCORRECT LOGIN DETAILS")
                 }
-              }
-          });
+          }});
      
           });
   
-      })
+})
 
       
 

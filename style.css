@@ -191,7 +191,7 @@ a.BackButtonQuizPage{
     
   }
   .rectangle3 {
-    position: absolute;
+    position: relative;
     top: -60px;
   }
   .rectangle1{
