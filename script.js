@@ -37,10 +37,7 @@ $("#add-success-msg").hide();
           }
           
           reDirect();
-
-
-
-          });
+        });
   
       })
   
