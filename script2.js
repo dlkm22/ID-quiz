@@ -4,7 +4,7 @@ $("#add-unsuccessful-msg").hide();
       $("#submit").on("click", function (e) { 
         // prevent default action of the button
           e.preventDefault();
-  
+
           let email = $("#eMail").val();
           let password = $("#passWord").val();
   
@@ -37,26 +37,10 @@ $("#add-unsuccessful-msg").hide();
                 if (email === response[i].email && password === response[i].password){
                     $("#add-success-msg").show();
                     function reDirect() {
-                        window.location.href="index.html";  
+                        window.location.href="quizpage.html";  
                 }
                     reDirect();
-                    let content = "";
-                    $.ajax(settings).done(function (response) {
-      
-                      let content = "";
-                
-                      for (var i = 0; i < response.length && i < limit; i++) {
-                        console.log(response[i]);
-                        //[METHOD 1]
-                        //let's run our loop and slowly append content
-                        //we can use the normal string append += method
-            
-                        content += "<tr><td>" + response[i].username + "</td>" +
-                          "<td>" + response[i].email + "</td>" ;
-                      }   
-
-                      $("#userinfo tbody").html(content);
-                })}
+              }
 
                 else{
                     $("#add-unsuccessful-msg").show();
@@ -67,38 +51,3 @@ $("#add-unsuccessful-msg").hide();
           });
   
 })
-
-      
-
-    
-
-
-
-
-      
-
-
-  
-
-
-
-
-
-
-/*
-  var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://userinformation-531d.restdb.io/rest/userinfomatio",
-    "method": "GET",
-    "headers": {
-      "content-type": "application/json",
-      "x-apikey": "<your CORS apikey here>",
-      "cache-control": "no-cache"
-    }
-  }
-  
-  $.ajax(settings).done(function (response) {
-    console.log(response);
-  });
-  */
