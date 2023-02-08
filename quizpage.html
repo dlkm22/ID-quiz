@@ -15,55 +15,55 @@
 
         
         <style>
+
             :root {
         --green: #21f4bf;
         }
 
-        .navigationbar {
-        font-family: Arial, Helvetica, sans-serif;
-        }
-        .quizlist{
-            
-        }
-        ul {
-            list-style: none;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1em 0;
-            text-decoration: none;
-        }
+        #navigationbar {
+  width: 100vw;
+  background-color: transparent;
+  font-weight: bold;
+}
+            ul {
+                list-style: none;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1em 0;
+            }
 
-        li a {
-        
-            color: white;
-            padding-right: 3em;
-            position: relative;
-            transition: all ease-in-out 250ms;
-            font-size: 30px;  
-        }
+            li a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.5em;
+                text-decoration: none;
+                color: white;
+                padding-right: 3em;
+                position: relative;
+                transition: all ease-in-out 250ms;
+            }
 
-        li a::after {
-            content: "";
-            position: absolute;
-            display: block;
-            height: 0.4em;
-            width: 0%;
-            background-color: var(--green);
-            bottom: -1em;
-            transition:all ease-in-out 250ms;
-        }
+            li a::after {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 0.4em;
+                width: 0%;
+                background-color: var(--green);
+                bottom: -1em;
+                transition: all ease-in-out 250ms;
+            }
 
-        li a:hover::after {
-            width: 60%;
-            
-        }
+            li a:hover::after {
+                width: 100%;
+            }
 
-        li a:hover {
-            color: var(--green);
-            text-decoration: none;
-        }
+            li a:hover {
+                color: var(--green);
+                text-decoration: none;
+            }
+    
 
     
         
@@ -173,6 +173,7 @@
             color: white;
         }
         
+        
         </style>
     </head>                      
 
@@ -195,7 +196,7 @@
 </div>
 
 
-<div class='navigationbar'>
+<div id='navigationbar'>
     <ul class="quizlist">
       <li><a href="#">AGENTS</a></li>
       <li><a href="#">MAPS</a></li>
@@ -204,7 +205,7 @@
     </ul>
   </div>
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br>
 <div class="container2">
     
         <div class="flex-column mx-1"> <a href="">+</a> </div>
