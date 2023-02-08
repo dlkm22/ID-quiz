@@ -14,13 +14,12 @@ var settings = {
  
 $(document).ready(function() {
   $.ajax(settings).done(function (response) {
-    console.log(response);
-    console.log(response[0].email);
-    console.log(response[0].password);
+    //console.log(response);
+    //console.log(response[0].email);
+    //console.log(response[0].password);
   
     for (let i = 0; i < response.length; i++) {
       console.log(response[i].username);
-
       }
   })
 });
