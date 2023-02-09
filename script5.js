@@ -1,3 +1,6 @@
+let external = sessionStorage.getItem("questionsKey");
+
+
 
 let questions = [
     {
@@ -9,7 +12,7 @@ let questions = [
             "The hunt begins",
             "They will cower!",
             "Let’s turn the tide!"
-        ]   
+        ]
     },
     {
         id: 2,
@@ -223,6 +226,348 @@ let questions = [
 
 ];
 
+let questions1 = [
+    {
+        id: 1,
+        question: "What ability is this?" ,
+        answer:"Paranoia",
+        options: [
+            "Paranoia",
+            "Dark Cover",
+            "From the shadows",
+            "Shrouded steps"
+        ]
+    },
+    {
+        id: 2,
+        question: "Which agent does this ability belong to?" ,
+        answer:"Fade",
+        options: [
+            "Jett",
+            "Reyna",
+            "Kay-O",
+            "Fade"
+        ]
+    },
+    {
+        id: 3,
+        question: "What ability is this?" ,
+        answer:"Run it Back",
+        options: [
+            "Curveball",
+            "Resurrection",
+            "Run it Back",
+            "Heal Orb"
+        ]
+    },
+    {
+        id: 4,
+        question: "Which agent does this ability belong to?" ,
+        answer:"Cypher",
+        options: [
+            "Brimstone",
+            "Cypher",
+            "Breach",
+            "Sage"
+        ]
+    },
+    {
+        id: 5,
+        question: "What ability is this?" ,
+        answer:"Toxic screen",
+        options: [
+            "Toxic screen",
+            "Hot hands",
+            "Snakebite",
+            "Snake’s pit"
+        ]
+    },
+    {
+        id: 6,
+        question: "What is the name of this ability?" ,
+        answer:"Fast Lane",
+        options: [
+            "WI love racism!",
+            "Fault Line",
+            "Trailblazer",
+            "Blaze Wall"
+        ]
+    },
+    {
+        id: 7,
+        question: "What is the name of this ability?" ,
+        answer:"Nova Pulse",
+        options: [
+            "Nova Pulse",
+            "Concussing them",
+            "ShockWave",
+            "Stun Like Vegetable!"
+        ]
+    },
+    {
+        id: 8,
+        question: "What is this ability known as?" ,
+        answer:"Trailblazer",
+        options: [
+            "CatRunner",
+            "Wolf",
+            "Dog",
+            "Trailblazer"
+        ]
+    },
+    {
+        id: 9,
+        question: "Which creature is fade’s prowler related to?" ,
+        answer:"Cat",
+        options: [
+            "Dog",
+            "Wolf",
+            "Cat",
+            "Sheep"
+        ]
+    },
+    {
+        id: 10,
+        question: "What is the name of this ability?" ,
+        answer:"Sky Smoke",
+        options: [
+            "Remote Smoke",
+            "Smoke Down",
+            "Sky Smoke",
+            "Incinidary"
+        ]
+    }
+];
+
+let questions2= [
+    {
+        id: 1,
+        question: "Where can this bell be found?" ,
+        answer:"Haven",
+        options: [
+            "Haven",
+            "Ascent",
+            "Lotus",
+            "Split"
+        ]
+    },
+    {
+        id: 2,
+        question: "Where can this be found?" ,
+        answer:"Haven",
+        options: [
+            "Split",
+            "Icebox",
+            "Haven",
+            "Fracture"
+        ]
+    },
+    {
+        id: 3,
+        question: "Where can this shop be found?" ,
+        answer:"Split",
+        options: [
+            "Ascent",
+            "Split",
+            "Icebox",
+            "Bind"
+        ]
+    },
+    {
+        id: 4,
+        question: "Where can this be found?" ,
+        answer:"Split A Rafters",
+        options: [
+            "Ascent A Heaven",
+            "Split B Rafters",
+            "Ascent B Heaven",
+            "Split A Rafters"
+        ]
+    },
+    {
+        id: 5,
+        question: "Where can this elephant be found?" ,
+        answer:"Lotus C site",
+        options: [
+            "Lotus A Tree",
+            "Lotus C site",
+            "Lotus A site",
+            "Lotus B site"
+        ]
+    },
+    {
+        id: 6,
+        question: "Where can this view be seen?" ,
+        answer:"Lotus",
+        options: [
+            "Breeze",
+            "Lotus",
+            "Pearl",
+            "Icebox"
+        ]
+    },
+    {
+        id: 7,
+        question: "Where can this quote be seen?" ,
+        answer:"Fracture",
+        options: [
+            "Fracture",
+            "Lotus",
+            "Split",
+            "Bind"
+        ]
+    },
+    {
+        id: 8,
+        question: "Where can these monitors be found?",
+        answer:"Fracture",
+        options: [
+            "Ascent",
+            "Bind",
+            "Haven",
+            "Fracture"
+        ]
+    },
+    {
+        id: 9,
+        question: "Where can this operating table be found?" ,
+        answer:"Icebox",
+        options: [
+            "Icebox",
+            "Haven",
+            "Split",
+            "Bind"
+        ]
+    },
+    {
+        id: 10,
+        question: "What ability is this?" ,
+        answer:"Paranoia",
+        options: [
+            "Haven",
+            "Icebox",
+            "Fracture",
+            "Split"
+        ]
+    }
+
+];
+
+let questions3= [
+    {
+        id: 1,
+        question: "How long can Cypher’s tripwire extend?" ,
+        answer:"1500",
+        options: [
+            "500",
+            "1000",
+            "1500",
+            "2000"
+        ]
+    },
+    {
+        id: 2,
+        question: "How long does Killjoy’s ultimate last for?" ,
+        answer:"13 seconds",
+        options: [
+            "10 seconds",
+            "11 seconds",
+            "12 seconds",
+            "13 seconds"
+        ]
+    },
+    {
+        id: 3,
+        question: "How long did Phoenix’s flash last for pre-buff?" ,
+        answer:"1.1s",
+        options: [
+            "1.1s",
+            "1.2s",
+            "1.3s",
+            "1.5s"
+        ]
+    },
+    {
+        id: 4,
+        question: "How long does Astra’s wall last for?" ,
+        answer:"21 seconds",
+        options: [
+            "18 seconds",
+            "19 seconds",
+            "20 seconds",
+            "21 seconds"
+        ]
+    },
+    {
+        id: 5,
+        question: "Where is Harbor from?" ,
+        answer:"India",
+        options: [
+            "India",
+            "Australia",
+            "Turkey",
+            "Poland"
+        ]
+    },
+    {
+        id: 6,
+        question: "Which agent holds an operator in their player card?" ,
+        answer:"Sova",
+        options: [
+            "Sova",
+            "Jett",
+            "Sage",
+            "Chamber"
+        ]
+    },
+    {
+        id: 7,
+        question: "Which agent can slow fall?" ,
+        answer:"Jett",
+        options: [
+            "Astra",
+            "Brimstone",
+            "Jett",
+            "Reyna"
+        ]
+    },
+    {
+        id: 8,
+        question: "Who says this voiceline, “Toaster is broken!”" ,
+        answer:"Chamber",
+        options: [
+            "Chamber",
+            "Kay-O",
+            "Breach",
+            "Neon"
+        ]
+    },
+    {
+        id: 9,
+        question: "Which agent is from the Philippines?" ,
+        answer:"Neon",
+        options: [
+            "Neon",
+            "Sage",
+            "Phoenix",
+            "Yoru"
+        ]
+    },
+    {
+        id: 10,
+        question: "What is one of Omen’s hobbies?" ,
+        answer:"Knitting",
+        options: [
+            "Teleporting",
+            "Drinking Monster",
+            "Knitting",
+            "Blinding enemies"
+        ]
+    },
+
+
+];
+
 let arrayofImages = [
          "./Images/ascent.jpg",
          "./Images/breachflash.jpg", 
@@ -246,6 +591,44 @@ let arrayofImages = [
          "./Images/Rito.jpg" 
 ] ;
 
+let arrayofImages1 = [
+    "./images2/omen.jpg",
+    "./images2/fade.jpg",
+    "./images2/penix.jpg",
+    "./images2/cypjer.jpg",
+    "./images2/viper.jpg",
+    "./images2/neon.jpg",
+    "./images2/astra.jpg",
+    "./images2/syke.jpg",
+    "./images2/fadde2.jpg",
+    "./images2/brim.png",
+];
+
+let arrayofImages2 = [
+    "./maps/bell.jpg",
+    "./maps/havenmonitor.jpg",
+    "./maps/crab.jpg",
+    "./maps/splitrafter.jpg",
+    "./maps/elephant.jpg",
+    "./maps/lotus.jpg",
+    "./maps/stakes.jpg",
+    "./maps/3mon.jpg",
+    "./maps/samurai.jpg",
+    "./maps/boat.jpg",
+];
+
+let arrayofImages3 = [
+    "./agents/trip.jpg",
+    "./agents/kj.jpg",
+    "./agents/OOF.jpg",
+    "./agents/shaqtra.jpg",
+    "./agents/pearlharbor.jpg",
+    "./agents/drone.jpg",
+    "./agents/deez.jpg",
+    "./agents/camber.jpg",
+    "./agents/sonic.jpg",
+    "./agents/hobby.jpg",
+];
 
 const myImg = document.querySelector("img")
 
@@ -259,17 +642,64 @@ window.onload = function(){
 };
 
 function show(count){
-    let question = document.getElementById("questions");
-    let[first, second, third, fourth] = questions[count].options;
+    console.log(sessionStorage.getItem("questionKey"))
+    if (external == "questions"){
 
-    question.innerHTML = `<h2>Q${count + 1}. ${questions[count].question}</h2>
+    let question = document.getElementById("questions");
+    let[first, second, third, fourth] = questions[count].options; //Shows the options
+
+    question.innerHTML = `<h2>Q${count + 1}. ${ questions[count].question}</h2>
     <ul class="option_group">
     <li class="option">${first}</li>
     <li class="option">${second}</li>
     <li class="option">${third}</li>
     <li class="option">${fourth}</li>
     </ul>`;
-    toggleActive();  
+    toggleActive(); 
+ }
+ if (external == "questions1"){
+
+    let question = document.getElementById("questions");
+    let[first, second, third, fourth] = questions1[count].options; //Shows the options
+
+    question.innerHTML = `<h2>Q${count + 1}. ${ questions1[count].question}</h2>
+    <ul class="option_group">
+    <li class="option">${first}</li>
+    <li class="option">${second}</li>
+    <li class="option">${third}</li>
+    <li class="option">${fourth}</li>
+    </ul>`;
+    toggleActive(); 
+ }
+ if (external == "questions2"){
+
+    let question = document.getElementById("questions");
+    let[first, second, third, fourth] = questions2[count].options; //Shows the options
+
+    question.innerHTML = `<h2>Q${count + 1}. ${ questions2[count].question}</h2>
+    <ul class="option_group">
+    <li class="option">${first}</li>
+    <li class="option">${second}</li>
+    <li class="option">${third}</li>
+    <li class="option">${fourth}</li>
+    </ul>`;
+    toggleActive(); 
+ }
+ if (external == "questions3"){
+
+    let question = document.getElementById("questions");
+    let[first, second, third, fourth] = questions3[count].options; //Shows the options
+
+    question.innerHTML = `<h2>Q${count + 1}. ${ questions3[count].question}</h2>
+    <ul class="option_group">
+    <li class="option">${first}</li>
+    <li class="option">${second}</li>
+    <li class="option">${third}</li>
+    <li class="option">${fourth}</li>
+    </ul>`;
+    toggleActive(); 
+ }
+ toggleActive(); 
 }
 
 function toggleActive(){
@@ -280,12 +710,29 @@ function toggleActive(){
                 if(option[i].classList.contains("active")){
                     option[i].classList.remove("active");
                 }
-            }
+            }                                                                                                                                               
             option[i].classList.add("active");
         }
+        if(external == "questions"){
         myImg.src = arrayofImages[question_count];
         myImg.height = 300;
         myImg.width = 500;
+        }
+        if(external == "questions1"){
+            myImg.src = arrayofImages1[question_count];
+            myImg.height = 300;
+            myImg.width = 500;
+        }
+        if(external == "questions2"){
+            myImg.src = arrayofImages2[question_count];
+            myImg.height = 300;
+            myImg.width = 500;
+        }
+        if(external == "questions3"){
+            myImg.src = arrayofImages3[question_count];
+            myImg.height = 300;
+            myImg.width = 500;
+        }
     }
 }
 
@@ -294,14 +741,67 @@ function next(){
         location.href = "finish.html";
     }
     console.log(question_count);
+    if(question_count == questions1.length -1){
+        location.href = "finish.html";
+    }
+    console.log(question_count);
+    if(question_count == questions2.length -1){
+        location.href = "finish.html";
+    }
+    console.log(question_count);
+    if(question_count == questions3.length -1){
+        location.href = "finish.html";
+    }
+    console.log(question_count);
 
 let user_answer = document.querySelector("li.option.active").innerHTML;
-if(user_answer == questions[question_count].answer){
+if(external == "questions"){
+let user_answer = document.querySelector("li.option.active").innerHTML;
+if(user_answer == questions[question_count].answer)
+{
     points += 50;
     sessionStorage.setItem("points",points);
-}
-console.log(points);
 
+    console.log(points);
+
+
+}
+}
+
+if(external == "questions1"){
+let user_answer = document.querySelector("li.option.active").innerHTML;
+if(user_answer == questions1[question_count].answer)
+    {
+        points += 50;
+        sessionStorage.setItem("points",points);
+    
+        console.log(points);
+    
+    
+    }
+    }
+if(external == "questions2"){
+if(user_answer == questions2[question_count].answer)
+        {
+            points += 50;
+            sessionStorage.setItem("points",points);
+        
+            console.log(points);
+        
+        
+        }
+        }
+if(external == "questions3"){
+if(user_answer == questions3[question_count].answer)
+            {
+                points += 50;
+                sessionStorage.setItem("points",points);
+            
+                console.log(points);
+            
+            
+            }
+            }
 question_count++;
 show(question_count);
 }

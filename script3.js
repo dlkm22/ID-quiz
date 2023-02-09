@@ -1,4 +1,4 @@
-let username = $("#userName").val();
+let username = sessionStorage.getItem("finaluser"); //here
 
 var settings = {
   "async": true,
@@ -7,6 +7,7 @@ var settings = {
   "method": "GET",
   "headers": {
     "content-type": "application/json",
+    "Accept": "application/json",
     "x-apikey": "63c8a032969f06502871afee",
     "cache-control": "no-cache"
   }
@@ -14,15 +15,14 @@ var settings = {
  
 $(document).ready(function() {
   $.ajax(settings).done(function (response) {
-    //console.log(response);
-    //console.log(response[0].email);
-    //console.log(response[0].password);
-  
     for (let i = 0; i < response.length; i++) {
-      console.log(response[i].username);
+      if (response[i].Username === username)
+      console.log(username);
+      document.querySelector("span.user_FINAL").innerHTML = username
       }
   })
 });
+
 
       
 

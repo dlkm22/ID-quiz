@@ -7,10 +7,13 @@ $("#add-unsuccessful-msg").hide();
 
           let email = $("#eMail").val();
           let password = $("#passWord").val();
-  
+          let username = $("#userName").val();
+          let finaluser = "";
+
           let jsondata = { 
               "email": email,
               "password": password,
+              "username": username
           };
           
           var settings = {
@@ -34,8 +37,10 @@ $("#add-unsuccessful-msg").hide();
             for (let i = 0; i < response.length; i++) {
                 console.log(response[i].email);
 
-                if (email === response[i].email && password === response[i].password){
+                if (email === response[i].email && password === response[i].password && username === response[i].username){
                     $("#add-success-msg").show();
+                    finaluser += response[i].Username
+                    sessionStorage.setItem("finaluser", finaluser); //here
                     function reDirect() {
                         window.location.href="quizpage.html";  
                 }
