@@ -228,10 +228,26 @@ let arrayofImages = [
          "breachflash.jpg", 
          "ChamberTP.jpg",
          "Thinking.jpg",
-    
+         "Bugged.jpg",
+         "Sage.jpg",
+         "ProjectA.jpg",
+         "Turkey.jpg",
+         "Time.jpg",
+         "Omen.jpg",
+         "NoEntry.jpg",
+         "Revive.jpg",
+         "French.jpg",
+         "NoAnswersHere.jpg",
+         "RareKnives.jpg",
+         "BrokeJett.jpg",
+         "Flashbang.jpg",
+         "RazeKJ.jpg",
+         "NiceSkin.jpg",
+         "Rito.jpg" 
 ] ;
-const myImg = document.querySelector("img")
 
+
+const myImg = document.querySelector("img")
 
 
 let question_count = 0;
@@ -258,7 +274,7 @@ function show(count){
 
 function toggleActive(){
     let option = document.querySelectorAll("li.option");
-    for(let i=0; i < option.length; i++){
+    for(let i = 0; i < option.length; i++){
         option[i].onclick = function(){
             for(let i=0; i < option.length; i++){
                 if(option[i].classList.contains("active")){
@@ -274,13 +290,10 @@ function toggleActive(){
 }
 
 function next(){
-
     if(question_count == questions.length -1){
         location.href = "finish.html";
     }
     console.log(question_count);
-
-
 
 let user_answer = document.querySelector("li.option.active").innerHTML;
 if(user_answer == questions[question_count].answer){
