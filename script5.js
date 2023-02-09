@@ -224,26 +224,26 @@ let questions = [
 ];
 
 let arrayofImages = [
-         "ascent.jpg",
-         "breachflash.jpg", 
-         "ChamberTP.jpg",
-         "Thinking.jpg",
-         "Bugged.jpg",
-         "Sage.jpg",
-         "ProjectA.jpg",
-         "Turkey.jpg",
-         "Time.jpg",
-         "Omen.jpg",
-         "NoEntry.jpg",
-         "Revive.jpg",
-         "French.jpg",
-         "NoAnswersHere.jpg",
-         "RareKnives.jpg",
-         "BrokeJett.jpg",
-         "Flashbang.jpg",
-         "RazeKJ.jpg",
-         "NiceSkin.jpg",
-         "Rito.jpg" 
+         "./Images/ascent.jpg",
+         "./Images/breachflash.jpg", 
+         "./Images/ChamberTP.jpg",
+         "./Images/Thinking.jpg",
+         "./Images/Bugged.jpg",
+         "./Images/Sage.png",
+         "./Images/ProjectA.png",
+         "./Images/Turkey.jpg",
+         "./Images/Time.jpg",
+         "./Images/Omen.jpg",
+         "./Images/NoEntry.jpg",
+         "./Images/Revive.jpg",
+         "./Images/French.jpg",
+         "./Images/NoAnswersHere.jpg",
+         "./Images/RareKnives.jpg",
+         "./Images/BrokeJett.jpg",
+         "./Images/Flashbang.jpg",
+         "./Images/RazeKJ.png",
+         "./Images/NiceSkin.jpg",
+         "./Images/Rito.jpg" 
 ] ;
 
 
