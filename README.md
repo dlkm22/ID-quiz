@@ -1,4 +1,5 @@
 # Valorant Quizzes
+- Github link for Assignment 2: https://github.com/dlkm22/ID-quiz
 
 **VALORANT** is a tactical, first person shooter game that is available on Windows.
 
